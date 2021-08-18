@@ -11,11 +11,13 @@
 
 .frame {
     display: flex;
+    flex-direction: column-reverse;
     flex-grow: 1;
     border-left: 5px solid rgb(87, 52, 7);
     border-right: 5px solid rgb(87, 52, 7);
     border-top: 5px solid rgb(87, 52, 7);
     width: 90%;
+    background-color: #0009;
 }
 
 .groundFrame {
