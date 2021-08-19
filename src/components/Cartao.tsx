@@ -1,10 +1,16 @@
 import styles from '../styles/Cartao.module.css'
 
-export default function Cartao(props){
+interface CartaoProps {
+    bgcolor?: string
+    children?: any
+}
+
+export default function Cartao(props: CartaoProps){
     return(
         <div className={styles.cartao}
-            style={{backgroundColor: props.bgcolor ?? #FFF}}>
+            style={{backgroundColor:props.bgcolor ?? "white"}}>
 
+            {props.children}
         </div>
     )
 }
